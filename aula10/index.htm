@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="num"></h1>
+  <h4 id="res"></h4>
+  <script>
+    /*const n = prompt("Digite número:")
+    const nt = document.getElementById("teste");
+    nt.innerHTML = n;
+
+    const xResp = document.getElementById("Res");
+    xResp.innerHTML = `Seu número -3 = ${n - 3}`;*/
+
+    const val = Number(prompt("Digite um número:"))
+    const res = document.getElementById("res");
+
+    const ref = document.getElementById("num");
+    ref.innerHTML = val;
+    res.innerHTML += `<h4>Raiz quadrada: ${val**0.5}</h4>`;
+    res.innerHTML += `<h4>${val} é inteiro? ${Number.isInteger(val)}</h4>`;
+    res.innerHTML += `<h4>Número arredondado p/ cima: ${Math.ceil(val)}</h4>`;
+    res.innerHTML += `<h4>Número arredondado p/ baixo: ${Math.floor(val)}</h4>`;
+    res.innerHTML += `<h4>Com 2 casas decimais: ${val.toFixed(2)}</h4>`;
+
+  </script>
+</body>
+</html>
